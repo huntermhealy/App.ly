@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>app.ly</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= link_to raw("<h1>App.ly</h1>"), applications_path %>
+  <%= link_to 'New Application', new_application_path %>
+  <%= link_to 'New Applicatons Category', new_category_path %>
+  <br>
+ 
+
+
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @application.link %>
+</p>
+
+<p>
+  <strong>Due:</strong>
+  <%= @application.due %>
+</p>
+<p>
+  <strong>Number of recommendations:</strong>
+  <%= @application.num_recommendations %>
+</p>
+
+<p>
+  <strong>Essay:</strong>
+  <%= @application.essay %>
+</p>
+
+<p>
+  <strong>Essay topics:</strong>
+  <%= @application.essay_topics %>
+</p>
+
+<p>
+  <strong>Award amount:</strong>
+  <%= @application.award_amount %>
+</p>
+
+<p>
+  <strong>Essay word count:</strong>
+  <%= @application.essay_word_count %>
+</p>
+
+<%= link_to 'Edit', edit_application_path(@application) %> |
+<%= link_to 'Back', applications_path %>

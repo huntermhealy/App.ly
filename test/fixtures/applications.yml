@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  link: MyString
+  due: 2016-07-21 10:33:26
+  num_recommendations: 1
+  essay: false
+  essay_topics: MyText
+  award_amount: 1
+  essay_word_count: 1
+
+two:
+  link: MyString
+  due: 2016-07-21 10:33:26
+  num_recommendations: 1
+  essay: false
+  essay_topics: MyText
+  award_amount: 1
+  essay_word_count: 1

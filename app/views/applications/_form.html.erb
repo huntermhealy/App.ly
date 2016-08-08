@@ -1,0 +1,56 @@
+<%= form_for(application) do |f| %>
+  <% if application.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(application.errors.count, "error") %> prohibited this application from being saved:</h2>
+
+      <ul>
+      <% application.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="field">
+    <%= f.label :category %>
+    <%= f.select :category_id, options_from_collection_for_select(Category.all, "id", "name") %>
+  </div>
+
+  <div class="field">
+    <%= f.label :link %>
+    <%= f.text_field :link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :due %>
+    <%= f.datetime_select :due %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Number of recommendations' %>
+    <%= f.number_field :num_recommendations %>
+  </div>
+
+  <div class="field">
+    <%= f.label :essay %>
+    <%= f.check_box :essay %>
+  </div>
+
+  <div class="field">
+    <%= f.label :essay_topics %>
+    <%= f.text_area :essay_topics %>
+  </div>
+
+  <div class="field">
+    <%= f.label :award_amount %>
+    <%= f.number_field :award_amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :essay_word_count %>
+    <%= f.number_field :essay_word_count %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
