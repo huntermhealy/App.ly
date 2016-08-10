@@ -54,3 +54,62 @@ ul.hmenu {
 ul.hmenu li {
   display: inline;  
 }
+@import "compass/css3";
+@import "compass/css3/transform";
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include background-image(linear-gradient(left bottom, rgba(254,182,69,1) 0%, rgba(254,182,69,1) 50%, rgba(241,231,103,1) 100%));
+  }
+
+.box {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  width: 600px;
+}
+
+#nav{
+  text-align: center;
+}
+
+#title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "VT323", "Lucida Console", Monaco, monospace;
+  color: #50A1DC;
+  @include text-shadow(3px 3px 0px rgba(0, 0, 0, 1));
+  font-size: 0px;
+}
+
+#title span{
+  font-size: 100px;
+}
+
+.link{
+  text-align: center;
+  margin-top: 10px;
+  font-family: "VT323", "Lucida Console", Monaco, monospace;
+  color: #FCFCFC;
+  @include text-shadow(3px 3px 0px rgba(0, 0, 0, 1));
+  font-size: 0px;
+  &:link{
+    text-decoration: none;
+  }
+}
+
+.link span{
+  font-size: 68px;
+}
+
+.highlight{
+  color: #FFDF00;
+}
+
+.highlight2{
+  color: #F4F4F4;
+}
