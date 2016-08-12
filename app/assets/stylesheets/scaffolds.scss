@@ -55,13 +55,13 @@ div {
 
 .field_with_errors {
   padding: 2px;
-  background-color: #d2cece;
+  background-color: red;
   display: table;
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid #d2cece;
+  border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;

@@ -8,12 +8,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body> 
-  <%= link_to applications_path do %>
-  <!-- <h1>App.ly</h1> -->
-  <% end %>
- <!--  <%= link_to 'New Application', new_application_path %>
-  <%= link_to 'New Applicatons Category', new_category_path %> -->
+  <body>
+  <%= link_to raw("<h1>App.ly</h1>"), applications_path %>
+  <%= link_to 'New Application', new_application_path %>
+  <%= link_to 'New Applicatons Category', new_category_path %>
   <br>
  
 

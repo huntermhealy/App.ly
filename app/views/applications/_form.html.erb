@@ -1,7 +1,7 @@
 <%= form_for(application) do |f| %>
   <% if application.errors.any? %>
     <div id="error_explanation">
-      <h2>Uh-oh! We found <%= pluralize(application.errors.count, "error") %>. Give it another try.</h2>
+      <h2><%= pluralize(application.errors.count, "error") %> prohibited this application from being saved:</h2>
 
       <ul>
       <% application.errors.full_messages.each do |message| %>
@@ -12,7 +12,7 @@
   <% end %>
 <div class="field">
     <%= f.label :category %>
-    <%= f.select :category_id, [['College', 1],['Scholarship',2], ['Job',3], ['Internship',4], ['Summer Program',5], ['Leadership Position',6], ['Other',7]]%> <!--options_from_collection_for_select(Category.all, "id", "name") %>-->
+    <%= f.select :category_id, options_from_collection_for_select(Category.all, "id", "name") %>
   </div>
 
   <div class="field">
@@ -41,7 +41,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :award_amount %> <span>$<span>
+    <%= f.label :award_amount %>
     <%= f.number_field :award_amount %>
   </div>
 
