@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 body {
 background: rgba(255,255,255,1);
 background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(244,251,244,1) 100%);
@@ -34,6 +33,7 @@ h1 {
     margin-right: 3;
     font-weight: bold;
     border-bottom-width: 0;
+    line-height: 1em;
 }
 h3 {
     color: #85BB65;
@@ -44,72 +44,5 @@ h3 {
     margin-left: 1.5;
     margin-right: 1.5;
     font-weight: bold;
-}
-ul.hmenu {
-  list-style: none; 
-  margin: 0 0 2em;
-  padding: 0;
-}
-
-ul.hmenu li {
-  display: inline;  
-}
-@import "compass/css3";
-@import "compass/css3/transform";
-@import url(https://fonts.googleapis.com/css?family=VT323);
-
-body {
-  height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  @include background-image(linear-gradient(left bottom, rgba(254,182,69,1) 0%, rgba(254,182,69,1) 50%, rgba(241,231,103,1) 100%));
-  }
-
-.box {
-  position: relative;
-  margin: 0 auto;
-  height: 400px;
-  width: 600px;
-}
-
-#nav{
-  text-align: center;
-}
-
-#title {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "VT323", "Lucida Console", Monaco, monospace;
-  color: #50A1DC;
-  @include text-shadow(3px 3px 0px rgba(0, 0, 0, 1));
-  font-size: 0px;
-}
-
-#title span{
-  font-size: 100px;
-}
-
-.link{
-  text-align: center;
-  margin-top: 10px;
-  font-family: "VT323", "Lucida Console", Monaco, monospace;
-  color: #FCFCFC;
-  @include text-shadow(3px 3px 0px rgba(0, 0, 0, 1));
-  font-size: 0px;
-  &:link{
-    text-decoration: none;
-  }
-}
-
-.link span{
-  font-size: 68px;
-}
-
-.highlight{
-  color: #FFDF00;
-}
-
-.highlight2{
-  color: #F4F4F4;
+    line-height: 1em;
 }
