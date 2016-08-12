@@ -8,7 +8,6 @@ gem 'rails', '~> 5.0.0'
 #   gem 'sqlite3'
 # end
 gem 'pg'
-gem 'twilio-ruby'
 gem 'devise'
 group :production do
   gem 'rails_12factor'
