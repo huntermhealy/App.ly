@@ -14,35 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$(function() {
-  //Gold highlight on page title when mouse enter
-  $("#title").mouseenter(function() {
-    $(this).children().each(function(i, el) {
-      setTimeout(function() {
-        $(el).addClass("highlight");
-      }, 40 + 40 * i);
-      setTimeout(function() {
-        $(el).removeClass("highlight");
-      }, 120 + 40 * i);
-
-    });
-  });
-
-  //Gold highlight on links on mouseenter
-  $(".link").mouseover(function() {
-    $(this).children().each(function(i, el) {
-      setTimeout(function() {
-        $(el).addClass("highlight2");
-      }, 30 + 30 * i);
-    });
-  });
-
-  //Remove highlight when mouse leaves
-  $(".link").mouseout(function() {
-    $(this).children().each(function(i, el) {
-      setTimeout(function() {
-        $(el).removeClass("highlight2");
-      }, 30 + 30 * i);
-    });
-  });
-});
